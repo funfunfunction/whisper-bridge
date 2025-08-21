@@ -1,0 +1,38 @@
+# Environment variables
+.env
+.env.local
+.env.production
+
+# API Keys and secrets
+*.key
+*.pem
+config/secrets.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependencies
+node_modules/
+*.pyc
+__pycache__/
+
+# Build outputs
+dist/
+build/
+*.app
+*.ipa
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
