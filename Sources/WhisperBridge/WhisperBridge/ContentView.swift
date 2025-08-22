@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var audioRecorder = AudioRecorderManager()
-    @StateObject private var transcriptionManager = TranscriptionManager()
+    @StateObject private var speechRecognitionManager = SpeechRecognitionManager()
     @State private var showingShareSheet = false
     
     var body: some View {
@@ -18,8 +18,8 @@ struct ContentView: View {
                 
                 StatusCardView(
                     isRecording: audioRecorder.isRecording,
-                    isTranscribing: transcriptionManager.isTranscribing,
-                    modelStatus: transcriptionManager.getModelStatus()
+                    isTranscribing: speechRecognitionManager.isTranscribing,
+                    modelStatus: speechRecognitionManager.getModelStatus()
                 )
                 
                 AudioVisualizerView(audioLevels: audioRecorder.audioLevels)
