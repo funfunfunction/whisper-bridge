@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct VoiceScribeApp: App {
+struct WhisperBridgeApp: App {
     @StateObject private var audioRecorder = AudioRecorderManager()
     
     var body: some Scene {

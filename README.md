@@ -1,4 +1,4 @@
-# VoiceScribe - iOS Voice Recording & Transcription App
+# WhisperBridge - iOS Voice Recording & Transcription App
 
 A Swift iOS app that records audio and transcribes it using on-device AI with WhisperKit. Features include Action Button support, Shortcuts integration, and Control Center widgets.
 
@@ -33,8 +33,8 @@ cd whisper-bridge
 1. Open Xcode → **Create New Project**
 2. Choose: **iOS** → **App** → **Next**
 3. Configure:
-   - **Product Name**: `VoiceScribe`
-   - **Organization Identifier**: `com.yourname.VoiceScribe`
+   - **Product Name**: `WhisperBridge`
+   - **Organization Identifier**: `com.yourname.WhisperBridge`
    - **Interface**: SwiftUI
    - **Language**: Swift
    - **Use Core Data**: Unchecked
@@ -44,7 +44,7 @@ cd whisper-bridge
 1. **File** → **Add Package Dependencies**
 2. Enter URL: `https://github.com/argmaxinc/WhisperKit`
 3. Version: **Up to Next Major** (1.0.0 < 2.0.0)
-4. Add to target: **VoiceScribe**
+4. Add to target: **WhisperBridge**
 
 ### 4. Configure Project Settings
 
@@ -58,13 +58,13 @@ cd whisper-bridge
 
 Replace/add these files from the `Sources/` directory:
 
-- `VoiceScribeApp.swift` → Replace default app file
+- `WhisperBridgeApp.swift` → Replace default app file
 - `ContentView.swift` → Replace default content view
 - `UIComponents.swift` → Add new file
 - `AudioRecorderManager.swift` → Add new file
 - `TranscriptionManager.swift` → Add new file
 - `RecordVoiceIntent.swift` → Add new file
-- `VoiceScribeControls.swift` → Add new file
+- `WhisperBridgeControls.swift` → Add new file
 
 ### 6. Configure Info.plist
 
@@ -72,10 +72,10 @@ Copy privacy permissions from `Resources/Info.plist`:
 
 ```xml
 <key>NSMicrophoneUsageDescription</key>
-<string>VoiceScribe needs microphone access to record your voice for transcription.</string>
+<string>WhisperBridge needs microphone access to record your voice for transcription.</string>
 
 <key>NSSpeechRecognitionUsageDescription</key>  
-<string>VoiceScribe uses speech recognition to transcribe your recordings.</string>
+<string>WhisperBridge uses speech recognition to transcribe your recordings.</string>
 ```
 
 ### 7. Build & Test
@@ -95,7 +95,7 @@ Copy privacy permissions from `Resources/Info.plist`:
 
 ### Shortcuts Integration
 1. Open **Shortcuts** app
-2. Search for "VoiceScribe" intents
+2. Search for "WhisperBridge" intents
 3. Add "Quick Record" shortcut
 4. Configure Action Button (iPhone 15 Pro+):
    - Settings → Action Button → Shortcut → Quick Record
@@ -194,10 +194,10 @@ var statusColor: Color {
 
 **❌ Shortcuts don't appear**
 - Rebuild app after adding intents
-- Check Shortcuts app → Gallery → Search "VoiceScribe"
+- Check Shortcuts app → Gallery → Search "WhisperBridge"
 
 **❌ Microphone permission denied**
-- Settings → Privacy & Security → Microphone → VoiceScribe
+- Settings → Privacy & Security → Microphone → WhisperBridge
 
 **❌ Transcription is slow/inaccurate**
 - Use smaller model for speed

@@ -4,10 +4,10 @@ import AppIntents
 
 // Control Widget for iOS 18 Control Center
 @available(iOS 18.0, *)
-struct VoiceScribeControl: ControlWidget {
+struct WhisperBridgeControl: ControlWidget {
     var body: some ControlWidgetConfiguration {
         StaticControlConfiguration(
-            kind: "com.yourname.VoiceScribe.RecordControl"
+            kind: "com.yourname.WhisperBridge.RecordControl"
         ) {
             ControlWidgetButton(action: QuickRecordIntent()) {
                 Label("Record", systemImage: "mic.fill")
@@ -23,7 +23,7 @@ struct VoiceScribeControl: ControlWidget {
 struct RecordingToggleControl: ControlWidget {
     var body: some ControlWidgetConfiguration {
         AppIntentControlConfiguration(
-            kind: "com.yourname.VoiceScribe.RecordingToggle",
+            kind: "com.yourname.WhisperBridge.RecordingToggle",
             intent: RecordVoiceIntent.self
         ) { configuration in
             ControlWidgetToggle(
@@ -45,18 +45,18 @@ struct RecordingToggleControl: ControlWidget {
 struct VoiceRecordingStatusControl: ControlWidget {
     var body: some ControlWidgetConfiguration {
         StaticControlConfiguration(
-            kind: "com.yourname.VoiceScribe.StatusControl"
+            kind: "com.yourname.WhisperBridge.StatusControl"
         ) {
             ControlWidgetButton(action: QuickRecordIntent()) {
                 HStack {
                     Image(systemName: "mic.circle.fill")
                         .foregroundColor(.red)
-                    Text("VoiceScribe")
+                    Text("WhisperBridge")
                         .font(.caption)
                 }
             }
         }
-        .displayName("VoiceScribe Status")
+        .displayName("WhisperBridge Status")
         .description("View recording status and quick record")
     }
 }
@@ -66,7 +66,7 @@ struct VoiceRecordingStatusControl: ControlWidget {
 struct VoiceRecordingDurationControl: ControlWidget {
     var body: some ControlWidgetConfiguration {
         AppIntentControlConfiguration(
-            kind: "com.yourname.VoiceScribe.DurationControl",
+            kind: "com.yourname.WhisperBridge.DurationControl",
             intent: RecordVoiceIntent.self
         ) { configuration in
             ControlWidgetButton(action: configuration.intent) {
@@ -85,9 +85,9 @@ struct VoiceRecordingDurationControl: ControlWidget {
 
 // Widget Bundle
 @available(iOS 18.0, *)
-struct VoiceScribeWidgetBundle: WidgetBundle {
+struct WhisperBridgeWidgetBundle: WidgetBundle {
     var body: some Widget {
-        VoiceScribeControl()
+        WhisperBridgeControl()
         RecordingToggleControl()
         VoiceRecordingStatusControl()
         VoiceRecordingDurationControl()
@@ -135,18 +135,18 @@ struct RecordingStatusIntent: AppIntent {
 // MARK: - Control Center Integration Helper
 
 @available(iOS 18.0, *)
-extension VoiceScribeWidgetBundle {
+extension WhisperBridgeWidgetBundle {
     // Helper to register widgets with the system
     static func registerControlCenterWidgets() {
         // This would be called from the main app to ensure widgets are registered
-        print("VoiceScribe Control Center widgets registered")
+        print("WhisperBridge Control Center widgets registered")
     }
 }
 
 // MARK: - Legacy iOS Support (for non-iOS 18 devices)
 
 // Fallback struct for devices that don't support Control Center widgets
-struct VoiceScribeLegacyWidget {
+struct WhisperBridgeLegacyWidget {
     static func isControlCenterSupported() -> Bool {
         if #available(iOS 18.0, *) {
             return true
@@ -163,10 +163,10 @@ struct VoiceScribeLegacyWidget {
 // MARK: - Widget Configuration
 
 // Helper for widget configuration in Xcode
-extension VoiceScribeControl {
+extension WhisperBridgeControl {
     static func configurationInstructions() -> String {
         return """
-        To add VoiceScribe controls to Control Center:
+        To add WhisperBridge controls to Control Center:
         1. Go to Settings → Control Center
         2. Under "More Controls", find "Voice Record"
         3. Tap the green + to add it

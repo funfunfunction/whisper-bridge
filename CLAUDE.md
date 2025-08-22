@@ -1,6 +1,6 @@
-# VoiceScribe iOS App - Project Guide
+# WhisperBridge iOS App - Project Guide
 
-This file provides project-specific guidance for the VoiceScribe iOS voice recording and transcription app development.
+This file provides project-specific guidance for the WhisperBridge iOS voice recording and transcription app development.
 
 ## Project Overview
 Building a Swift iOS voice recording app with on-device transcription using WhisperKit, following the phase-1 guide. The app will feature:
@@ -28,8 +28,8 @@ When cloning to Mac, follow these steps:
 
 1. **Create New Xcode Project**:
    - iOS → App → SwiftUI interface
-   - Product Name: `VoiceScribe` 
-   - Organization Identifier: `com.yourname.VoiceScribe`
+   - Product Name: `WhisperBridge` 
+   - Organization Identifier: `com.yourname.WhisperBridge`
    - Language: Swift
 
 2. **Add Package Dependencies**:
@@ -50,13 +50,13 @@ When cloning to Mac, follow these steps:
 ```
 whisper-bridge/
 ├── Sources/                    # Swift source files
-│   ├── VoiceScribeApp.swift   # Main app entry point
+│   ├── WhisperBridgeApp.swift   # Main app entry point
 │   ├── ContentView.swift      # Main UI with recording controls
 │   ├── UIComponents.swift     # Reusable UI components
 │   ├── AudioRecorderManager.swift    # Audio recording logic
 │   ├── TranscriptionManager.swift    # WhisperKit integration
 │   ├── RecordVoiceIntent.swift       # Shortcuts integration
-│   └── VoiceScribeControls.swift     # Control Center widgets
+│   └── WhisperBridgeControls.swift     # Control Center widgets
 ├── Resources/                  # Assets, Info.plist
 │   └── Info.plist             # Privacy permissions & app config
 ├── Tests/                     # Unit tests (future)

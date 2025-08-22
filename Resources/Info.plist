@@ -33,10 +33,10 @@
 
 	<!-- Privacy Permissions -->
 	<key>NSMicrophoneUsageDescription</key>
-	<string>VoiceScribe needs microphone access to record your voice for transcription.</string>
+	<string>WhisperBridge needs microphone access to record your voice for transcription.</string>
 	
 	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>VoiceScribe uses speech recognition to transcribe your recordings.</string>
+	<string>WhisperBridge uses speech recognition to transcribe your recordings.</string>
 
 	<!-- App Interface Configuration -->
 	<key>UIApplicationSceneManifest</key>
@@ -131,7 +131,7 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.widgetkit-extension</string>
 		<key>NSExtensionPrincipalClass</key>
-		<string>VoiceScribeWidgetBundle</string>
+		<string>WhisperBridgeWidgetBundle</string>
 	</dict>
 
 	<!-- App Intents for Shortcuts -->
