@@ -1,0 +1,241 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		MM0001000000000000000001 /* MurmurMobile/App/MurmurMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = MM0002000000000000000001 /* MurmurMobile/App/MurmurMobileApp.swift */; };
+		MM0001000000000000000002 /* MurmurMobile/App/ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = MM0002000000000000000002 /* MurmurMobile/App/ContentView.swift */; };
+		MM0001000000000000000003 /* MurmurMobile/Core/AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = MM0002000000000000000003 /* MurmurMobile/Core/AudioRecorder.swift */; };
+		MM0001000000000000000004 /* MurmurMobile/Core/TranscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = MM0002000000000000000004 /* MurmurMobile/Core/TranscriptionService.swift */; };
+		MM0001000000000000000005 /* MurmurMobile/Core/KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = MM0002000000000000000005 /* MurmurMobile/Core/KeychainManager.swift */; };
+		MM0001000000000000000006 /* MurmurMobile/Settings/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = MM0002000000000000000006 /* MurmurMobile/Settings/SettingsView.swift */; };
+		MM0001000000000000000007 /* MurmurMobile/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = MM0002000000000000000007 /* MurmurMobile/Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		MM0002000000000000000001 /* MurmurMobile/App/MurmurMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurmurMobile/App/MurmurMobileApp.swift; sourceTree = "<group>"; };
+		MM0002000000000000000002 /* MurmurMobile/App/ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurmurMobile/App/ContentView.swift; sourceTree = "<group>"; };
+		MM0002000000000000000003 /* MurmurMobile/Core/AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurmurMobile/Core/AudioRecorder.swift; sourceTree = "<group>"; };
+		MM0002000000000000000004 /* MurmurMobile/Core/TranscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurmurMobile/Core/TranscriptionService.swift; sourceTree = "<group>"; };
+		MM0002000000000000000005 /* MurmurMobile/Core/KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurmurMobile/Core/KeychainManager.swift; sourceTree = "<group>"; };
+		MM0002000000000000000006 /* MurmurMobile/Settings/SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurmurMobile/Settings/SettingsView.swift; sourceTree = "<group>"; };
+		MM0002000000000000000007 /* MurmurMobile/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MurmurMobile/Assets.xcassets; sourceTree = "<group>"; };
+		MM0002000000000000000008 /* MurmurMobile/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MurmurMobile/Info.plist; sourceTree = "<group>"; };
+		MM0002000000000000000009 /* MurmurMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = MurmurMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		MM0003000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		MM0004000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				MM0004000000000000000002 /*  */,
+				MM0004000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		MM0004000000000000000002 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				MM0002000000000000000001 /* MurmurMobile/App/MurmurMobileApp.swift */,
+				MM0002000000000000000002 /* MurmurMobile/App/ContentView.swift */,
+				MM0002000000000000000003 /* MurmurMobile/Core/AudioRecorder.swift */,
+				MM0002000000000000000004 /* MurmurMobile/Core/TranscriptionService.swift */,
+				MM0002000000000000000005 /* MurmurMobile/Core/KeychainManager.swift */,
+				MM0002000000000000000006 /* MurmurMobile/Settings/SettingsView.swift */,
+				MM0002000000000000000007 /* MurmurMobile/Assets.xcassets */,
+				MM0002000000000000000008 /* MurmurMobile/Info.plist */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		MM0004000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				MM0002000000000000000009 /* MurmurMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		MM0005000000000000000001 /* MurmurMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = MM0008000000000000000001 /* Build configuration list for PBXNativeTarget "MurmurMobile" */;
+			buildPhases = (
+				MM0006000000000000000001 /* Sources */,
+				MM0003000000000000000001 /* Frameworks */,
+				MM0006000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MurmurMobile;
+			productName = MurmurMobile;
+			productReference = MM0002000000000000000009 /* MurmurMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		MM0007000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					MM0005000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = MM0008000000000000000002 /* Build configuration list for PBXProject "MurmurMobile" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+			mainGroup = MM0004000000000000000001;
+			productRefGroup = MM0004000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				MM0005000000000000000001 /* MurmurMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		MM0006000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				MM0001000000000000000007 /* MurmurMobile/Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		MM0006000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				MM0001000000000000000001 /* MurmurMobile/App/MurmurMobileApp.swift in Sources */,
+				MM0001000000000000000002 /* MurmurMobile/App/ContentView.swift in Sources */,
+				MM0001000000000000000003 /* MurmurMobile/Core/AudioRecorder.swift in Sources */,
+				MM0001000000000000000004 /* MurmurMobile/Core/TranscriptionService.swift in Sources */,
+				MM0001000000000000000005 /* MurmurMobile/Core/KeychainManager.swift in Sources */,
+				MM0001000000000000000006 /* MurmurMobile/Settings/SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		MM0009000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		MM0009000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		MM0009000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G94W83J5LU;
+				INFOPLIST_FILE = MurmurMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Murmur;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.fff.murmurmobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Debug;
+		};
+		MM0009000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G94W83J5LU;
+				INFOPLIST_FILE = MurmurMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Murmur;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.fff.murmurmobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		MM0008000000000000000001 /* Build configuration list for PBXNativeTarget "MurmurMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				MM0009000000000000000003 /* Debug */,
+				MM0009000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		MM0008000000000000000002 /* Build configuration list for PBXProject "MurmurMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				MM0009000000000000000001 /* Debug */,
+				MM0009000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = MM0007000000000000000001 /* Project object */;
+}
